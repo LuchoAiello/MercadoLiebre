@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Roboto' sans-serif;
+    font-size: 12px;
+}
+
+header {
+    background-color: #EAC926;
+    text-align: center;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+    padding: 15px;
+    background-color:#ebebeb;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+main section article img{
+    width: 100%;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-header {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.bottom-header {
+    flex-wrap: wrap;
+    
+}
+
+header p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo {
+    width:200px;
+    margin: 0px 0px 0px 10px;
+}
+
+.bottom-header {
+    display: none;
+}
+
+.buscador{
+    margin: auto;
+    text-align: center;
+    
+}
+
+.buscador input{
+    background-color: white;
+    border: silver solid 1px;
+    height: 20px;
+    width: 210px;
+    padding: 0px 0px 0px 5px;
+}
+
+.buscador i {
+    font-size: 15px;
+    position: relative;
+    left: 105px;
+    top: -20px;
+    background-color: white;
+    border: solid 1px silver;
+    height: 20px;
+    width: 20px;
+    color:black;
+}
+
+.burger-menu {
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #03264C;
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px 0px 10px;
+}
+
+.titulo {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    margin: 10px;
+}
+ 
+.caja-de-articulos {
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    margin: 0px 0px 5px;
+    background-color: #ffffff;
+    text-align: left;
+    position: relative;
+}
+
+.color-icono {
+    color:#39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    right: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 50%;
+}
+
+
+.descuento {
+    font-size: 16px;
+    color:#39b54a;
+    width: 50%;
+}
+
+.producto {
+    font-size: 16px;
+    display: none;
+}
+
+footer {
+  text-align: center;
+}
+
+.icons {
+    color:#1259c3;
+    font-size: 32px;
+    margin: 15px 0px 15px;
+}
+
+.copyright {
+    margin: 20px 0px 5px 5px;
+    text-align: left;
+}
+
+.registro {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.formulario-de-registro {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formulario-de-registro label{
+    display:block;
+}
+
+.texto-registro {
+    border: none;
+    border-radius: 5px;
+    padding: 0px 0px 0px 5px;
+    border: silver 1px solid;
+}
+
+.titulos-label {
+    font-weight: bold;
+    padding: 0px 0px 10px;
+}
+
+.boton-formulario {
+    background-color:#1259c3;
+    border: none;
+    font-size: 15px;
+    color:white;
+    padding:5px 5px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+}
+
+.logear {
+    align-items: center;
+    padding: 10px;
+}
+
+.texto-logeo {
+    width: 70%;
+    margin: 0px 0px 30px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    border: silver 1px solid;
+    border-radius: 5px;
+}
+
+.boton-formulario-logeo {
+    background-color:#666;
+    border: none;
+    font-size: 15px;
+    color:black;
+    padding:5px 5px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.boton-formulario-logeo a {
+    color: white;
+}
+
+.boton-formulario-logeo:hover {
+    background-color: #0022AA;
+}
+
+
+@media (min-width: 361px){
+    main section .sector-1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    main section .sector-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+  main section article{
+     width: 49%;
+ }
+
+ main section article:hover .producto{
+     display:block;
+ }
+
+ main section article:hover .color-icono {
+    transform: rotate(-90deg);
+    transition: transform 500ms;
+  }
+
+ main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+ }
+
+ .porcentaje {
+    display: flex;
+ }
+
+ .porcentaje .precio, .producto {
+     padding: 0px 5px;
+ }
+
+ .bottom-header {
+     display: flex;
+ }
+ 
+ .bottom-header-left {
+     margin:auto;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .bottom-header-left li {
+    padding: 0px 5px;
+}
+
+
+ .bottom-header-rigth {
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-header-rigth li {
+    padding: 0px 5px;
+}
+
+ .burger-menu {
+    display: none;
+}
+}
+
+@media (min-width: 769px){
+    header div p{
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .top-header {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .bottom-header {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    main section article {
+        width: 22%;
+    }
+
+    footer {
+        display: flex;
+    }
+    
+    footer section {
+        display: block;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    
+    footer section .icons:hover {
+        color: #03264C;
+        transition: 450ms;
+    }
+
+}
+
+
