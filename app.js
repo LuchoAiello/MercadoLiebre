@@ -8,8 +8,8 @@ const publicPath = path.resolve(__dirname, './public') ;
 
 app.use(express.static(publicPath));
 
-app.listen(3030, () => {
-    console.log('Servidor prendido en http://localhost:3030');
+app.listen(process.env.PORT || function() {
+    console.log('Servidor corriendo en puerto 3000')
 })
 
 app.get("/", (req, res) => {
