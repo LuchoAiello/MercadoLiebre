@@ -190,9 +190,15 @@ footer {
 }
 
 .registro {
-    padding: 10px;
+    padding: 30px;
     text-align: center;
-    margin: 5px;
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
 }
 
 .formulario-de-registro {
@@ -216,8 +222,8 @@ footer {
     padding: 0px 0px 10px;
 }
 
-.boton-formulario {
-    background-color:#1259c3;
+.boton-formulario-registro {
+    background-color:#666;
     border: none;
     font-size: 15px;
     color:white;
@@ -226,9 +232,43 @@ footer {
     margin: 10px 0px 0px 10px;
 }
 
+.boton-formulario-registro:hover {
+    background-color: #0022AA;
+}
+
+.boton-formulario-registro-borrar {
+    background-color:#666;
+    border: none;
+    font-size: 15px;
+    color:white;
+    padding:5px 5px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+}
+
+.boton-formulario-registro-borrar:hover {
+    background-color: #b9252c;
+}
+
 .logear {
     align-items: center;
-    padding: 10px;
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+    max-width: 40%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+.label-del-login {
+    display: block;
+    text-align: left;
+    margin-left: 105px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .texto-logeo {
@@ -253,7 +293,7 @@ footer {
     text-align: center;
     text-decoration: none;
     list-style-type: none;
-    margin-bottom: 18vw;
+    margin-bottom: 20px;
 }
 
 .boton-formulario-logeo a {
@@ -262,6 +302,28 @@ footer {
 
 .boton-formulario-logeo:hover {
     background-color: #0022AA;
+}
+
+.boton-formulario-logeo-borrar {
+    background-color:#666;
+    border: none;
+    font-size: 15px;
+    color:black;
+    padding:5px 5px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 29vh;
+}
+
+.boton-formulario-logeo-borrar p {
+    color: white;
+}
+
+.boton-formulario-logeo-borrar:hover {
+    background-color: #b9252c;
 }
 
 
