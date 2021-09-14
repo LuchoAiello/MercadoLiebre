@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -92,10 +93,14 @@ header div p{
 
 .buscador input{
     background-color: white;
-    border: silver solid 1px;
+    border: none;
     height: 30px;
     width: 300px;
     padding-left: 15px;
+}
+
+input:focus {
+     outline: none;
 }
 
 .buscador i {
@@ -130,7 +135,6 @@ header div p{
 }
  
 .caja-de-articulos {
-    
     padding: 10px;
     margin: 0px 0px 5px;
     background-color: #ffffff;
@@ -267,7 +271,6 @@ footer {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        
     }
 
     main section .sector-2 {
@@ -278,7 +281,7 @@ footer {
     }
     
     main section article{
-     width: 49%;
+     width: 47%;
      padding: 5px;
      border-radius: 10px;
      background-color: white;
