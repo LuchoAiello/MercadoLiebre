@@ -356,6 +356,7 @@ footer {
      background-color: white;
      margin-top: 10px;
      margin-bottom: 10px;
+     transition: all 500ms;
   }
 
   main section article:hover .producto{
@@ -368,7 +369,8 @@ footer {
   }
 
  main section article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    zoom: 1.1;
  }
 
  .porcentaje {
@@ -415,6 +417,7 @@ footer section {
 footer section .icons:hover {
     color: #03264C;
     transition: 450ms;
+    zoom: 1.1;
 }
 }
 
