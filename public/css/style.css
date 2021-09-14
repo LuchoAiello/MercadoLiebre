@@ -264,8 +264,7 @@ footer {
 
 .label-del-login {
     display: block;
-    text-align: left;
-    margin-left: 105px;
+    text-align: center;
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
